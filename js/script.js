@@ -77,7 +77,7 @@ function changePage(current_page) {
     // if the current page is not first page show previous button
     else{
         previousButton.style.visibility = "visible";
-        previousButton.innerHTML = " " + (current_page - 1);
+        previousButton.innerHTML = "" + (current_page - 1) + " <- Previous Page";
     }
 
     // if the current page is last page no next page exists so hide the next button
@@ -87,7 +87,7 @@ function changePage(current_page) {
     // if the current page is not last page show next button
     else{
         nextButton.style.visibility = "visible";
-        nextButton.innerHTML = " " + (current_page + 1);
+        nextButton.innerHTML = "Next Page -> " + (current_page + 1);
     }
 
 }
